@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Digital Citizen's Playbook — 7th Grade</title>
+<meta name="description" content="A digital citizenship infographic for 7th graders: how to be safe, smart, and kind online. Built for Ms. Madewell's science class." />
+<meta name="author" content="Chasity N. Madewell" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,700;1,9..144,900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
+    --body:"Nunito", ui-rounded, "Segoe UI", system-ui, sans-serif;
+
+    --paper:#fbf6ee;
+    --paper-2:#f3ebdd;
+    --ink:#241b2e;
+    --ink-soft:#5b5067;
+    --line:#e2d6c4;
+
+    /* topic hues */
+    --think:#3a6df0;     --think-bg:#eaf0ff;
+    --print:#e08a1e;     --print-bg:#fdf1dd;
+    --kind:#e0476b;      --kind-bg:#fde8ee;
+    --lock:#1ca583;      --lock-bg:#e1f6ef;
+    --mind:#7b54d6;      --mind-bg:#efe9fc;
+    --data:#1f97b8;      --data-bg:#e2f4f8;
+
+    --gold:#e6a829;
+    --maxw:880px;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--body);
+    color:var(--ink);
+    line-height:1.55;
+    background:
+      radial-gradient(80% 50% at 85% -5%, rgba(58,109,240,.10), transparent 60%),
+      radial-gradient(70% 45% at 0% 8%, rgba(224,71,107,.08), transparent 60%),
+      var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    text-align:center;
+    padding:64px 22px 40px;
+    position:relative;
+  }
+  .kicker{
+    font-family:var(--body);
+    font-weight:800;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    font-size:.74rem;
+    color:var(--think);
+    margin:0 0 14px;
+  }
+  h1.title{
+    font-family:var(--display);
+    font-weight:900;
+    font-size:clamp(2.5rem, 7vw, 4.4rem);
+    line-height:1.02;
+    letter-spacing:-.015em;
+    margin:0 0 6px;
+  }
+  h1.title em{ font-style:italic; color:var(--kind); font-weight:900 }
+  .subtitle{
+    font-family:var(--display);
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(1.1rem,2.6vw,1.5rem);
+    color:var(--ink-soft);
+    margin:6px auto 0;
+    max-width:36ch;
+  }
+  .credit-pill{
+    display:inline-flex; align-items:center; gap:10px;
+    margin-top:26px;
+    padding:9px 18px 9px 12px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:999px;
+    font-size:.86rem; font-weight:700; color:var(--ink-soft);
+    box-shadow:0 6px 22px rgba(36,27,46,.06);
+  }
+  .credit-pill .sq{
+    width:26px;height:26px;border-radius:7px;
+    background:linear-gradient(135deg,var(--think),var(--mind));
+    display:inline-flex;align-items:center;justify-content:center;
+    color:#fff;font-family:var(--display);font-weight:900;font-size:.9rem;
+  }
+
+  /* ---------- INTRO ---------- */
+  .intro{
+    margin:30px auto 8px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:30px 30px 26px;
+    box-shadow:0 10px 30px rgba(36,27,46,.05);
+  }
+  .intro h2{
+    font-family:var(--display); font-weight:900;
+    font-size:1.5rem; margin:0 0 10px; letter-spacing:-.01em;
+  }
+  .intro p{margin:0 0 12px; color:#3a3142; font-size:1.02rem}
+  .intro p:last-child{margin-bottom:0}
+  .intro .note{
+    font-size:.92rem; color:var(--ink-soft);
+    border-left:3px solid var(--gold);
+    padding:4px 0 4px 14px; margin-top:16px;
+    font-style:italic;
+  }
+  .intro strong{color:var(--think)}
+
+  .section-label{
+    text-align:center;
+    font-family:var(--body); font-weight:800;
+    letter-spacing:.2em; text-transform:uppercase;
+    font-size:.74rem; color:var(--ink-soft);
+    margin:46px 0 4px;
+  }
+  .section-label .ln{
+    display:inline-block;width:34px;height:2px;background:var(--line);
+    vertical-align:middle;margin:0 12px;
+  }
+
+  /* ---------- TOPIC CARDS ---------- */
+  .cards{display:flex;flex-direction:column;gap:20px;margin-top:24px}
+  .card{
+    --hue:var(--think); --huebg:var(--think-bg);
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:26px 28px;
+    display:grid;
+    grid-template-columns:74px 1fr;
+    gap:22px;
+    box-shadow:0 8px 26px rgba(36,27,46,.05);
+    position:relative;
+    overflow:hidden;
+  }
+  .card::before{
+    content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+    background:var(--hue);
+  }
+  .card .iconwrap{
+    width:74px;height:74px;border-radius:18px;
+    background:var(--huebg);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--hue);
+  }
+  .card .iconwrap svg{width:42px;height:42px;display:block}
+  .num{
+    position:absolute; top:18px; right:24px;
+    font-family:var(--display); font-weight:900; font-style:italic;
+    font-size:2.6rem; line-height:1;
+    color:var(--hue); opacity:.16;
+  }
+  .card h3{
+    font-family:var(--display); font-weight:900;
+    font-size:1.4rem; margin:2px 0 2px; letter-spacing:-.01em;
+    padding-right:42px;
+  }
+  .card .tag{
+    display:inline-block;
+    font-size:.68rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--hue); background:var(--huebg);
+    padding:3px 10px; border-radius:999px; margin-bottom:10px;
+  }
+  .card ul{margin:8px 0 0; padding:0; list-style:none}
+  .card li{
+    position:relative; padding-left:26px; margin-bottom:8px;
+    font-size:.99rem; color:#3a3142;
+  }
+  .card li::before{
+    content:""; position:absolute; left:4px; top:.5em;
+    width:9px;height:9px;border-radius:3px;
+    background:var(--hue); transform:rotate(45deg);
+  }
+  .card li strong{color:var(--ink)}
+  .learn{
+    display:inline-flex; align-items:center; gap:7px;
+    margin-top:14px; margin-right:8px;
+    font-weight:800; font-size:.9rem;
+    color:var(--hue); text-decoration:none;
+    border-bottom:2px solid transparent;
+    transition:border-color .15s ease;
+  }
+  .learn:hover{border-bottom-color:var(--hue)}
+  .learn svg{width:15px;height:15px}
+
+  /* ---------- STANDARDS STRIP ---------- */
+  .standards{
+    margin:48px auto 0;
+    background:linear-gradient(160deg,#241b2e,#3a2c4a);
+    color:#f3ecf7;
+    border-radius:22px;
+    padding:34px 32px 30px;
+  }
+  .standards h2{
+    font-family:var(--display); font-weight:900; font-style:italic;
+    font-size:1.6rem; margin:0 0 6px; color:#fff;
+  }
+  .standards p.lead{color:#cdbfd9; margin:0 0 20px; font-size:.98rem; max-width:60ch}
+  .std-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  .std{
+    display:block;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:14px;
+    padding:16px 16px 15px;
+    text-decoration:none; color:#f3ecf7;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .std:hover{background:rgba(255,255,255,.12); transform:translateY(-2px)}
+  .std .src{font-size:.66rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gold)}
+  .std .nm{font-family:var(--display); font-weight:700; font-size:1.05rem; margin:5px 0 4px; color:#fff}
+  .std .ds{font-size:.84rem; color:#cdbfd9; line-height:1.4}
+  .std .go{display:inline-flex;align-items:center;gap:6px;margin-top:9px;font-size:.78rem;font-weight:800;color:var(--gold)}
+
+  .more-resources{
+    margin:22px auto 0; text-align:center;
+    font-size:.9rem; color:var(--ink-soft);
+  }
+  .more-resources a{color:var(--think); font-weight:800; text-decoration:none; border-bottom:1px solid var(--line)}
+  .more-resources a:hover{border-bottom-color:var(--think)}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    text-align:center; padding:40px 22px 60px; margin-top:10px;
+    color:var(--ink-soft);
+  }
+  footer .rule{width:54px;height:3px;background:var(--gold);border-radius:3px;margin:0 auto 18px}
+  footer .by{font-family:var(--display); font-style:italic; font-size:1.25rem; color:var(--ink); margin:0 0 4px}
+  footer .meta{font-size:.86rem; margin:0}
+  footer .tiny{font-size:.76rem; margin-top:14px; color:#9a8e7e}
+
+  @media (max-width:560px){
+    .card{grid-template-columns:1fr; gap:14px}
+    .card .iconwrap{width:64px;height:64px}
+    .num{font-size:2rem; top:16px; right:18px}
+    .std-grid{grid-template-columns:1fr}
+  }
+
+  @media print{
+    body{background:#fff}
+    .card, .intro, .standards{box-shadow:none; break-inside:avoid}
+    .learn, .std{text-decoration:underline}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Digital Citizenship · Be Safe · Be Smart · Be Kind</p>
+    <h1 class="title">The Digital&nbsp;Citizen's<br><em>Playbook</em></h1>
+    <p class="subtitle">Six moves for living a good life online — written for 7th graders, by your science teacher.</p>
+    <span class="credit-pill"><span class="sq">M</span> Ms. Madewell's Class · 7th Grade · American Leadership Academy</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="intro">
+    <h2>So… what <em>is</em> a "digital citizen"?</h2>
+    <p>Here's the honest answer: <strong>nobody fully agrees.</strong> If you search "digital citizenship" online, you'll find a hundred different definitions from teachers, tech companies, and governments. That's okay — it's a big idea, and it's still growing as the internet changes.</p>
+    <p>But underneath the arguments, almost everyone is really talking about the same thing: <strong>being a person online the same way you'd want to be a person in real life</strong> — safe, smart, honest, and kind. The internet isn't a different planet with different rules. It's just a bigger room with the door propped open. This playbook gives you six moves that work in that room.</p>
+    <p class="note">Every section has a real "Learn more" link you can tap to dig deeper. The blue links at the bottom go to the official standards this is built on.</p>
+  </section>
+
+  <p class="section-label"><span class="ln"></span> The Six Moves <span class="ln"></span></p>
+
+  <div class="cards">
+
+    <!-- 1 · THINK / critical media literacy -->
+    <article class="card" style="--hue:var(--think); --huebg:var(--think-bg)">
+      <span class="num">1</span>
+      <div class="iconwrap">
+        <!-- magnifier over a screen -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="8" width="28" height="20" rx="2.5"/>
+          <path d="M6 22h28"/>
+          <circle cx="30" cy="32" r="8"/>
+          <path d="M36 38l6 6"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag">Think Before You Trust</span>
+        <h3>Don't believe everything the screen tells you.</h3>
+        <ul>
+          <li><strong>Ask "who made this, and why?"</strong> before you share. Ads, jokes, and AI-made images can all look real.</li>
+          <li><strong>Read sideways.</strong> Open a new tab and check what <em>other</em> sites say about the source — not just what the source says about itself.</li>
+          <li><strong>Slow down on stuff that makes you angry.</strong> Strong feelings are exactly what fake or misleading posts are built to trigger.</li>
+        </ul>
+        <a class="learn" href="https://newslit.org/" target="_blank" rel="noopener">News Literacy Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="learn" href="https://cor.stanford.edu/" target="_blank" rel="noopener">Stanford: Check It Online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </article>
+
+    <!-- 2 · FOOTPRINT -->
+    <article class="card" style="--hue:var(--print); --huebg:var(--print-bg)">
+      <span class="num">2</span>
+      <div class="iconwrap">
+        <!-- footprint -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 30c-3 0-6-3-6-9 0-6 3-12 7-12s5 6 4 12c-1 6-2 9-5 9z"/>
+          <circle cx="11" cy="36" r="2.4"/>
+          <circle cx="16" cy="40" r="2.4"/>
+          <circle cx="22" cy="38" r="2.4"/>
+          <path d="M34 24c2 0 4 2 4 6s-2 7-5 7-3-4-2-8c.5-3 1-5 3-5z"/>
+          <circle cx="40" cy="32" r="2"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag">Your Digital Footprint</span>
+        <h3>The internet remembers — like, forever-ish.</h3>
+        <ul>
+          <li><strong>"Delete" doesn't always mean gone.</strong> Screenshots, reposts, and backups can outlive the post you erased.</li>
+          <li><strong>Future you is watching.</strong> Coaches, colleges, and bosses really do search names. Post like the grown-up you'll become is in the room.</li>
+          <li><strong>Build a footprint you're proud of</strong> — projects, art, kindness. A good trail is a head start, not just a risk.</li>
+        </ul>
+        <a class="learn" href="https://www.commonsense.org/education/digital-citizenship" target="_blank" rel="noopener">Common Sense: Digital Citizenship <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </article>
+
+    <!-- 3 · KIND -->
+    <article class="card" style="--hue:var(--kind); --huebg:var(--kind-bg)">
+      <span class="num">3</span>
+      <div class="iconwrap">
+        <!-- heart + chat -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 10h26a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H18l-8 7v-7H8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/>
+          <path d="M21 16.5c-1.7-2-5-1.3-5 1.4 0 2.4 3.4 4.6 5 5.6 1.6-1 5-3.2 5-5.6 0-2.7-3.3-3.4-5-1.4z"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag">Digital Etiquette</span>
+        <h3>Be the kind of person you'd want in your comments.</h3>
+        <ul>
+          <li><strong>Type it only if you'd say it to their face</strong> — with a teacher standing right there.</li>
+          <li><strong>Don't be a bystander.</strong> If someone's being piled on, don't join, don't share it. Check on them, and tell a trusted adult.</li>
+          <li><strong>Assume you read it wrong first.</strong> Text has no tone. Ask before you fire back.</li>
+        </ul>
+        <a class="learn" href="https://www.stopbullying.gov/cyberbullying/what-is-it" target="_blank" rel="noopener">StopBullying.gov <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </article>
+
+    <!-- 4 · LOCK -->
+    <article class="card" style="--hue:var(--lock); --huebg:var(--lock-bg)">
+      <span class="num">4</span>
+      <div class="iconwrap">
+        <!-- shield lock -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M24 5l15 5v11c0 11-7 18-15 22-8-4-15-11-15-22V10l15-5z"/>
+          <rect x="18" y="22" width="12" height="10" rx="2"/>
+          <path d="M21 22v-3a3 3 0 0 1 6 0v3"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag">Safety &amp; Security</span>
+        <h3>Lock the doors before you decorate the house.</h3>
+        <ul>
+          <li><strong>Strong, different passwords</strong> — a short phrase beats one tricky word. Never hand them out, not even to a "friend."</li>
+          <li><strong>Keep private stuff private:</strong> full name, address, school, and location off public profiles.</li>
+          <li><strong>If something feels off, tell an adult.</strong> Strangers who rush you or ask for secrets are the warning sign — not your fault, always reportable.</li>
+        </ul>
+        <a class="learn" href="https://beinternetawesome.withgoogle.com/" target="_blank" rel="noopener">Be Internet Awesome <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="learn" href="https://www.missingkids.org/netsmartz/home" target="_blank" rel="noopener">NetSmartz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </article>
+
+    <!-- 5 · MIND -->
+    <article class="card" style="--hue:var(--mind); --huebg:var(--mind-bg)">
+      <span class="num">5</span>
+      <div class="iconwrap">
+        <!-- brain / balance -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M24 9c-4 0-7 3-7 6-3 0-5 3-5 6s2 5 4 6c0 4 3 7 8 7"/>
+          <path d="M24 9c4 0 7 3 7 6 3 0 5 3 5 6s-2 5-4 6c0 4-3 7-8 7"/>
+          <path d="M24 9v31"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag">Digital Wellness</span>
+        <h3>Protect your headspace.</h3>
+        <ul>
+          <li><strong>Phones away at bedtime.</strong> Screens steal sleep, and tired brains can't learn, play, or chill. Charge it outside your room.</li>
+          <li><strong>Highlight reels aren't real life.</strong> People post their best 1%. Comparing your whole self to it isn't a fair fight.</li>
+          <li><strong>Notice how an app leaves you feeling.</strong> If it makes you anxious or mean, that's data. Take a break — you're allowed to log off.</li>
+        </ul>
+        <a class="learn" href="https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx" target="_blank" rel="noopener">Family Media Plan (AAP) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </article>
+
+    <!-- 6 · DATA -->
+    <article class="card" style="--hue:var(--data); --huebg:var(--data-bg)">
+      <span class="num">6</span>
+      <div class="iconwrap">
+        <!-- data / cookie -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M24 6c10 0 18 8 18 18s-8 18-18 18S6 34 6 24a18 18 0 0 1 18-18z"/>
+          <path d="M24 6c-1 3 1 6 4 6 0 3 2 5 5 4-1 4 2 7 6 6"/>
+          <circle cx="18" cy="20" r="1.8"/>
+          <circle cx="27" cy="27" r="1.8"/>
+          <circle cx="17" cy="31" r="1.8"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag">Data &amp; Privacy</span>
+        <h3>If it's free, you might be the product.</h3>
+        <ul>
+          <li><strong>Apps collect a lot</strong> — your location, contacts, what you watch and for how long. That info is worth money to them.</li>
+          <li><strong>Check the permissions.</strong> A flashlight app doesn't need your photos. Turn off what an app doesn't truly need.</li>
+          <li><strong>You have a say.</strong> Privacy settings, "limit tracking," and saying no to over-sharing are real tools. Use them.</li>
+        </ul>
+        <a class="learn" href="https://consumer.ftc.gov/identity-theft-and-online-security/online-privacy-and-security" target="_blank" rel="noopener">FTC: Online Privacy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="standards">
+    <h2>Where this playbook comes from</h2>
+    <p class="lead">These six moves aren't just my opinion — they line up with the digital citizenship standards that schools and governments around the world use. Tap any one to see the real source.</p>
+    <div class="std-grid">
+      <a class="std" href="https://www.digitalcitizenship.net/nine-elements.html" target="_blank" rel="noopener">
+        <div class="src">The Nine Elements</div>
+        <div class="nm">DigitalCitizenship.net</div>
+        <div class="ds">Mike Ribble's nine elements — the model most U.S. schools teach from.</div>
+        <span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="std" href="https://iste.org/standards" target="_blank" rel="noopener">
+        <div class="src">Student Standards</div>
+        <div class="nm">ISTE Standards</div>
+        <div class="ds">The tech-in-learning standards that name "Digital Citizen" as a goal for every student.</div>
+        <span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="std" href="https://joint-research-centre.ec.europa.eu/projects-and-activities/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en" target="_blank" rel="noopener">
+        <div class="src">European Framework</div>
+        <div class="nm">DigComp</div>
+        <div class="ds">The European Union's framework for the digital skills every citizen needs.</div>
+        <span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <p class="more-resources">Want the full classroom curriculum behind this? Explore <a href="https://www.commonsense.org/education/digital-citizenship/curriculum" target="_blank" rel="noopener">Common Sense Education's Digital Citizenship lessons</a>.</p>
+
+</main>
+
+<footer>
+  <div class="rule"></div>
+  <p class="by">Built for my students.</p>
+  <p class="meta">Chasity N. Madewell · 7th Grade Science · American Leadership Academy</p>
+  <p class="tiny">A digital citizenship resource. Links open trusted .org, .gov, and .edu sources.</p>
+</footer>
+
+</body>
+</html>
